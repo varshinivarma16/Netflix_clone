@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*temparary*/
+.windowWidth {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 350px;
+}
+
+@media screen and (max-width: 1919px) {
+    .wrapper {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .wrapper {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .wrapper {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .wrapper {
+        padding: 0 25px;
+    }
+}

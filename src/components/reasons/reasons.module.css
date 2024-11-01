@@ -1,0 +1,109 @@
+.Reasons {
+    /* margin: 0 30px; */
+    color: white;
+    margin-top: 80px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.boxes {
+    width: 230px;
+    padding: 25px 10px 20px 15px;
+    height: 350px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    flex: 1;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+}
+
+.boxes p {
+    color: white;
+    opacity: 70%;
+}
+
+svg {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.heading {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.statement {
+    margin-bottom: 15px;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 1919px) {
+    .boxes {
+        height: 330px;
+    }
+
+    .statement {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1279px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .boxes {
+        width: auto;
+        height: 200px;
+        margin: 0;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+
+}
+
+
+@media screen and (max-width: 959px) {
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .boxes {
+        width: auto;
+        height: 200px;
+        margin: 0;
+    }
+
+    .statement {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .boxes {
+        height: 220px;
+    }
+
+    .boxes svg {
+        width: 3.9rem;
+    }
+
+    .Reasons {
+        margin-top: 70px;
+    }
+}

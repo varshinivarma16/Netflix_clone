@@ -1,0 +1,136 @@
+/*movies or shows box*/
+
+
+.trends {
+    color: white;
+}
+
+.trendHeading {
+    margin-bottom: 20px;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.posterBoxes {
+    position: relative;
+    padding: 10px;
+    /* border: 2px solid white; */
+}
+
+.posters {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 40px;
+    scroll-behavior: smooth;
+}
+
+.poster {
+    height: 310px;
+    width: 225px;
+    border-radius: 7px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.navLeft,
+.navRight {
+    background-color: #1a1a1a;
+    /* background-color: white; */
+    color: #b9b9b9;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border: none;
+    border-radius: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navLeft {
+    left: 10px;
+}
+
+.navRight {
+    right: 10px;
+}
+
+
+.navigations {
+    padding: 10px;
+    font-size: large;
+    height: 100px;
+}
+
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 1919px) {
+    .poster {
+        height: 250px;
+        width: 180px;
+    }
+
+    .trendHeading {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1279px) {
+
+
+    .poster {
+        height: 252px;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .poster {
+        height: 157px;
+        width: 112px;
+    }
+
+    .trendHeading {
+        font-size: 1.1rem;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .posters {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 599px) {}
